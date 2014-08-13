@@ -1,0 +1,137 @@
+\documentclass[twocolumn, a4paper, 10pt]{article}
+\usepackage[cmex10]{amsmath}
+
+% makes everything a bit tighter
+\usepackage{microtype}
+
+\usepackage{amsopn}
+\usepackage{amsthm}
+\usepackage{amsmath}
+
+\usepackage{hyperref}
+
+\usepackage{graphicx}
+\graphicspath{{./figures/}}
+\DeclareGraphicsExtensions{.pdf,.jpeg,.png,.eps, .svg}
+
+% if you want to draw sth: have a look at tikz
+\usepackage{tikz}
+\usetikzlibrary{calc, fit, shapes, decorations.markings}
+
+% comments for yourself
+\newcommand{\me}[1]{{\color{red}#1}}
+% and on the margin
+\newcommand{\meb}[1]{\marginpar{\small\textcolor{red}{#1}}}
+
+% comments for benny
+\newcommand{\cb}[1]{{\color{red}#1}}
+% and on the margin
+\newcommand{\cbb}[1]{\marginpar{\small\textcolor{red}{#1}}}
+
+% for lorem ipsum - you can remove that
+\usepackage{lipsum}
+
+\begin{document}
+\title{\Large Your Thesis Topic}
+
+\author{Philipp Borgers}
+
+\maketitle
+
+\def\abstractname{{\textbf Abstract}}
+\begin{abstract}
+\textbf{\lipsum[1]}
+\end{abstract}
+
+
+\section{Introduction}
+\lipsum[2-5]
+
+\section{Other sections...}
+\lipsum[6-8]
+
+\section{Conclusion}
+\lipsum[9]
+
+\appendix
+\section{Appendix}
+
+\subsection{Papers from the course}
+For your convenience, the list of papers we read in our course: In the anonymity course, we did read~\cite{
+	Chaum1981, 
+	Chaum1988,
+	Pfitzmann1991,
+	Chor1998,
+	Park1994,
+	Reiter1998,
+	Goldschlag1996,
+	Raymond2001,
+	Dingledine2004,
+	Douceur2002,
+	Serjantov2002,
+	Danezis2003,
+	Murdoch2005,
+	Goldreich2002,
+	Yao1982,
+	Cai2012,
+	Camenisch2002,
+	Johnson2013,
+	Tsang2011,
+	Murdoch2006,
+	Miers2013,
+	Narayanan2009,
+	Bonneau2014,
+	Michalis2014,
+	Syverson2009},
+and in the censorship course~\cite{
+	Anderson1996,
+	Waldman2000,
+	Waldman2001,
+	Feamster2003,
+	Feamster2002,
+	Dingledine2006,
+	Clayton2006,
+	Chor1998,
+	Perng2005,
+	Clarke2002,
+	Crandall2007,
+	Douceur2002,
+	Winter2012,
+	Moghaddam2012,
+	Fifield2012,
+	Houmansadr2013b,
+	Lincoln2012,
+	Verkamp2013,
+	Wustrow2011,
+	Burnett2010,
+	Schuchard2012,
+	Invernizzi2013,
+	Houmansadr2014a}.
+
+\subsection{Suggested Reading}
+For writing in general, I suggest reading
+\begin{itemize}
+	\item \url{http://www.cs.indiana.edu/mit.research.how.to/section3.7.html}
+\end{itemize}
+Here
+\begin{itemize}
+	\item \url{http://www.cs.cmu.edu/afs/cs.cmu.edu/user/mleone/web/how-to.html}
+\end{itemize}
+is a nice collection of links on writing and research.
+Regarding writing style, I found this page
+\begin{itemize}
+	\item \url{http://writingcenter.unc.edu/handouts/}
+\end{itemize}
+to be very helpful in general, and in particular these pages
+\begin{itemize}
+	\item \url{http://writingcenter.unc.edu/handouts/style/}, 
+	\item \url{http://writingcenter.unc.edu/handouts/passive-voice/}.
+\end{itemize}
+
+\bibliographystyle{plain}
+\bibliography{bibliography}
+
+
+\end{document}
+
+

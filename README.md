@@ -1,1 +1,1 @@
-  # Paper for censorship seminar
+# Paper for censorship seminar
